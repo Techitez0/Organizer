@@ -28,7 +28,9 @@ The application is controlled via a simple **Graphical User Interface (GUI)** an
   <img src="https://github.com/user-attachments/assets/2dcd7bdd-c6dc-42e9-a589-6e275a6faeb9" alt="Screenshot (601)" width="601" height="313"/>
 </p>
 
-# Fully Orgnanied Automatically
+<p align="center">
+  Fully Organized Automatically
+</p
 
 ---
 

@@ -1,4 +1,48 @@
-📁 Moomin Discipline: Automated File SorterMoomin Discipline is a lightweight, robust, and silent utility designed to automatically organize files as they appear in a specified source directory (like your Downloads folder). It runs in the background, minimizing clutter and ensuring your workspace remains organized, accessible, and ready for action.The application is controlled via a simple graphical user interface (GUI) and a System Tray Icon, making it highly discreet and easy to manage.✨ FeaturesContinuous Monitoring: Uses the watchdog library for real-time file monitoring.Intelligent Categorization: Files are automatically moved into categorized folders (Images, Documents, Audio, Videos, etc.).Robust Moving Logic: Implements retry logic, file lock handling, and explicit deletion fixes to prevent file duplication and handle incomplete browser downloads gracefully.Strict Cleanup Loop: Features a periodic background thread that runs every few seconds to catch and move any files missed by the real-time events (e.g., instant .ico and converted files).Silent Operation: Runs in the background and is controlled via a System Tray Icon.User-Friendly GUI: A customtkinter interface allows users to easily view status, toggle monitoring, and change the Source and Target directories.🚀 Installation and SetupPrerequisitesYou need Python 3.8+ and the following libraries installed.Bashpip install customtkinter pystray Pillow watchdog
-File StructureEnsure the following four files are placed in the same project directory (e.g., C:\Users\Asad\Documents\MoominDiscipline):app_ui.py (The main application and UI controller)file_sorter_logic.py (The core monitoring engine)organizer.ico (The Executable Icon)organizer_tray.png (The System Tray Icon - Recommended: convert a copy of your ICO to PNG for best tray stability.)🔧 Building the Executable (.exe)For easy distribution and silent, continuous running, it is highly recommended to compile the application into a standalone Windows executable using PyInstaller.Install PyInstaller:Bashpip install pyinstaller
-Compile the App: Run the following command from the project directory. This command packages the application, sets the main Windows icon (--icon), and embeds the required data files for the System Tray (--add-data).Bashpyinstaller --noconsole --onefile --icon="organizer.ico" --add-data "organizer.ico;." app_ui.py
-The resulting executable, app_ui.exe, will be located in the newly created dist folder.🖥️ UsageStarting the ApplicationManual Start: Navigate to the dist folder and double-click app_ui.exe.Automatic Start: Use the Windows Task Scheduler to set app_ui.exe to run automatically "At log on" for persistent, silent organization.Controlling the SorterOnce started, the main window will automatically hide, and the application will run silently in the background.System Tray: Right-click the Moomin Discipline Icon near the clock on your Taskbar (you may need to click the ^ arrow to find it).Show Application: Click "Show Moomin Discipline" to open the main status window.Toggle Monitoring: Use the Start/Stop Monitoring button to pause or resume the file organization.Change Folders: Use the Change Folders button to update the Source (e.g., Downloads) and Target directories.📂 Source Code OverviewThe project is split into two modules to maintain a clean separation of concerns:FileRoleKey Componentsfile_sorter_logic.pyCore EngineFileSorter class, SorterEventHandler, _move_single_file() (with retry/lock logic), and the strict periodic cleanup loop.app_ui.pyUser InterfaceSorterApp (customtkinter window), SettingsWindow, and methods for controlling the FileSorter thread and initializing the pystray icon.🤝 ContributionContributions and suggestions for improving the categorization logic or robust moving algorithms are welcome! Please feel free to fork the repository and submit a pull request.
+# 📁 Moomin Discipline: Automated File Sorter
+
+**Moomin Discipline** is a lightweight, robust, and silent utility designed to automatically organize files as they appear in a specified source directory (like your **Downloads** folder).  
+It runs in the background, minimizing clutter and ensuring your workspace remains organized, accessible, and ready for action.
+
+The application is controlled via a simple **Graphical User Interface (GUI)** and a **System Tray Icon**, making it highly discreet and easy to manage.
+
+---
+
+## ✨ Features
+- **Continuous Monitoring**: Uses the `watchdog` library for real-time file monitoring.  
+- **Intelligent Categorization**: Files are automatically moved into categorized folders (Images, Documents, Audio, Videos, etc.).  
+- **Robust Moving Logic**: Implements retry logic, file lock handling, and explicit deletion fixes to prevent duplication and handle incomplete downloads gracefully.  
+- **Strict Cleanup Loop**: Periodic background thread catches and moves any files missed by real-time events (e.g., instant `.ico` and converted files).  
+- **Silent Operation**: Runs in the background and is controlled via a System Tray Icon.  
+- **User-Friendly GUI**: Built with `customtkinter`, allowing users to view status, toggle monitoring, and change Source/Target directories easily.  
+
+---
+
+## 🚀 Installation and Setup
+
+### Prerequisites
+You need **Python 3.8+** and the following libraries installed:
+
+```bash
+pip install customtkinter pystray Pillow watchdog
+```
+# 📂 File Structure
+Ensure the following files are placed in the same project directory (e.g., C:\Users\Asad\Documents\MoominDiscipline):
+
+app_ui.py → Main application and UI controller
+
+file_sorter_logic.py → Core monitoring engine
+
+organizer.ico → Executable Icon
+
+organizer_tray.png → System Tray Icon (recommended: convert a copy of your ICO to PNG for best tray stability)
+
+```bash
+pip install pyinstaller
+```
+
+# Compile the App
+Run the following command from the project directory:
+```bash
+pyinstaller --noconsole --onefile --icon="organizer.ico" --add-data "organizer.ico;." app_ui.py
+
+```

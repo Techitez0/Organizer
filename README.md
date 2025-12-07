@@ -1,3 +1,5 @@
+![App Screenshot](screenshot(600).png)
+
 # 📁 Moomin Discipline: Automated File Sorter
 
 **Moomin Discipline** is a lightweight, robust, and silent utility designed to automatically organize files as they appear in a specified source directory (like your **Downloads** folder).  

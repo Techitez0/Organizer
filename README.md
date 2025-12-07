@@ -1,4 +1,7 @@
-<img width="517" height="440" alt="Screenshot (600)" src="https://github.com/user-attachments/assets/06f85aba-abba-49a0-a332-f00c3c70439a" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/06f85aba-abba-49a0-a332-f00c3c70439a" alt="Screenshot (600)" width="517" height="440"/>
+</p>
+
 
 
 # 📁 Moomin Discipline: Automated File Sorter

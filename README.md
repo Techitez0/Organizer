@@ -21,7 +21,11 @@ The application is controlled via a simple **Graphical User Interface (GUI)** an
 - **Robust Moving Logic**: Implements retry logic, file lock handling, and explicit deletion fixes to prevent duplication and handle incomplete downloads gracefully.  
 - **Strict Cleanup Loop**: Periodic background thread catches and moves any files missed by real-time events (e.g., instant `.ico` and converted files).  
 - **Silent Operation**: Runs in the background and is controlled via a System Tray Icon.  
-- **User-Friendly GUI**: Built with `customtkinter`, allowing users to view status, toggle monitoring, and change Source/Target directories easily.  
+- **User-Friendly GUI**: Built with `customtkinter`, allowing users to view status, toggle monitoring, and change Source/Target directories easily.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2dcd7bdd-c6dc-42e9-a589-6e275a6faeb9" alt="Screenshot (601)" width="601" height="313"/>
+</p>
 
 ---
 

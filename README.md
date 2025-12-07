@@ -1,4 +1,5 @@
-![App Screenshot](organizer/screenshot%20(600).png)
+![App Screenshot](https://github.com/USERNAME/REPO/blob/main/organizer/screenshot%20(600).png?raw=true)
+
 
 
 

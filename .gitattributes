@@ -1,5 +1,2 @@
-# Tell GitHub Linguist to ignore TeX files
-*.tex linguist-detectable=false
-
-# Force .spec files to be treated as Python
 *.spec linguist-language=Python
+

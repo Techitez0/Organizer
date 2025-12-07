@@ -1,5 +1,4 @@
-![App Screenshot](Organizer/screenshot%20(600).png)
-
+<img width="517" height="440" alt="Screenshot (600)" src="https://github.com/user-attachments/assets/06f85aba-abba-49a0-a332-f00c3c70439a" />
 
 
 # 📁 Moomin Discipline: Automated File Sorter

@@ -1,5 +1,3 @@
-
-
 ![App Screenshot](Organizer/screenshot%20(600).png)
 
 

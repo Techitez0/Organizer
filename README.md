@@ -1,4 +1,5 @@
-![App Screenshot](https://github.com/USERNAME/REPO/blob/main/screenshot%20(600).png?raw=true)
+![App Screenshot](organizer/screenshot%20(600).png)
+
 
 
 # 📁 Moomin Discipline: Automated File Sorter

@@ -1,4 +1,4 @@
-![App Screenshot](screenshot(600).png)
+![App Screenshot](screenshot (600).png)
 
 # 📁 Moomin Discipline: Automated File Sorter
 

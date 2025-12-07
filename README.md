@@ -1,6 +1,6 @@
 
 
-![App Screenshot](https://github.com/Techitez0/REPO/blob/main/Organizer/screenshot%20(600).png?raw=true)
+![App Screenshot](Organizer/screenshot%20(600).png)
 
 
 

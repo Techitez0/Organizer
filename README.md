@@ -23,8 +23,9 @@ The application is controlled via a simple **Graphical User Interface (GUI)** an
 You need **Python 3.8+** and the following libraries installed:
 
 ```bash
-pip install customtkinter pystray Pillow watchdog
+pip install -r requirements.txt
 ```
+---
 # 📂 File Structure
 Ensure the following files are placed in the same project directory (e.g., C:\Users\Asad\Documents\MoominDiscipline):
 
@@ -35,10 +36,6 @@ file_sorter_logic.py → Core monitoring engine
 organizer.ico → Executable Icon
 
 organizer_tray.png → System Tray Icon (recommended: convert a copy of your ICO to PNG for best tray stability)
-
-```bash
-pip install pyinstaller
-```
 
 # Compile the App
 Run the following command from the project directory:
